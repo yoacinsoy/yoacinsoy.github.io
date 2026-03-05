@@ -1,5 +1,6 @@
 import HeroSection from "@/app/components/sections/HeroSection";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import SidebarLeft from "./components/SidebarLeft";
 
 export default function Home() {
     return (
