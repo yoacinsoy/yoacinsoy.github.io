@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from "@/app/components/sections/HeroSection";
 import DarkModeToggle from "@/components/DarkModeToggle";
 
 export default function Home() {
