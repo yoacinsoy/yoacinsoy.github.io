@@ -18,7 +18,7 @@ export default function SidebarRight() {
                 <button
                     key={i}
                     onClick={() => goToSlide(i)}
-                    className={`transition ${currentSlide === i ? 'scale-125 text-blue-400' : 'text-white'}`}
+                    className={`transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1) ${currentSlide === i ? 'scale-125 text-blue-400' : 'text-white'}`}
                 >
                     <CircleDot className="h-5 w-5" />
                 </button>

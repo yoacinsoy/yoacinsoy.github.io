@@ -37,12 +37,12 @@ export default function DarkModeToggle() {
     <button
       onClick={toggleTheme}
       className={`relative flex items-center w-20 h-10 rounded-full
-        transition-all duration-500 ease-in-out
+        transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
         ${isDark ? "neon-dark bg-zinc-900" : "neon-light bg-zinc-200"}`}
     >
       <div
         className={`absolute flex items-center justify-center w-8 h-8 rounded-full
-        transition-all duration-500 transform
+        transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1) transform
         ${isDark ? "translate-x-10 bg-zinc-800" : "translate-x-1 bg-white"}`}
       >
         {isDark ? (

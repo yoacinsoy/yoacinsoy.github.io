@@ -2,6 +2,72 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced smooth transitions for specific components */
+.neon-light,
+.neon-dark {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-property: border-color, box-shadow, transform !important;
+}
+
+/* Smooth theme transitions */
+[data-theme="dark"] {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out !important;
+}
+
+/* Smooth sidebar animations */
+#social-icons,
+#slider-controls {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Smooth button hover effects */
+button {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+               box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Smooth image transitions */
+img {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Smooth text animations */
+.text-xs {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Enhanced scroll snap for better UX */
+section {
+  scroll-snap-align: start;
+  scroll-margin-top: 2rem;
+}
+
+/* Smooth focus states */
+*:focus {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+  transition: outline-color 0.3s ease-in-out !important;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
