@@ -11,7 +11,7 @@ export default function Resume() {
             variant="outline"
             className="
             flex items-center gap-3
-            p-8
+            p-6
 
             bg-white text-black border-black
             hover:bg-black hover:text-white

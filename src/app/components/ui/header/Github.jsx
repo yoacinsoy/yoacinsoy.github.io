@@ -17,7 +17,7 @@ export default function GithubSocial() {
                 hover:shadow-[0_0_15px_rgba(255,255,255,0.4)]
                 text-black
                 border border-zinc-800
-                h-16 w-16
+                h-12 w-12
                 flex items-center justify-center"
         >
             <Link href="https://github.com/yoacinsoy" target="_blank">
