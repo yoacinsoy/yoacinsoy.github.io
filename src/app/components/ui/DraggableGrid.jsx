@@ -42,7 +42,7 @@ export default function DraggableGrid({ children }) {
             onMouseMove={onMouseMove}
             onMouseUp={onMouseUp}
             onMouseLeave={onMouseUp}
-            className="fixed inset-0 grid-bg z-50"
+            className="fixed inset-0 grid-bg z-30"
             style={{
                 backgroundPosition: `${position.x}px ${position.y}px`
             }}

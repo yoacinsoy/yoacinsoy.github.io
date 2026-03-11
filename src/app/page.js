@@ -1,7 +1,6 @@
 import ParticlesBackground from "./components/ui/ParticlesBackground";
 import HeroSection from "@/app/components/sections/HeroSection";
 import Header from "@/app/components/layout/Header";
-import SidebarLeft from "./components/navigation/SidebarLeft";
 import DraggableGrid from "./components/ui/DraggableGrid";
 
 export default function Home() {

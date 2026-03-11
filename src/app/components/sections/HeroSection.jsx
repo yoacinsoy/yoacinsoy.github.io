@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SidebarLeft from "../navigation/SidebarLeft";
 import SidebarRight from "../navigation/SidebarRight";
 

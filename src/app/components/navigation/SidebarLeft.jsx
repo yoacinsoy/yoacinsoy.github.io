@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 export default function SidebarLeft() {
     return (
-        <div id="social-icons" className="absolute top-1/2 left-2 z-20 hidden -translate-y-1/2 flex-col items-center gap-4 sm:left-6 sm:flex">
+        <div id="social-icons" className="absolute top-1/2 left-2 z-20 hidden -translate-y-1/2 flex-col items-center gap-4 sm:left-6 sm:flex z-60">
 
             <p className="rotate-180 text-xs font-bold tracking-widest text-blue-500 drop-shadow-[0_0_8px_#1F51FF] [writing-mode:vertical-rl] transition-colors duration-300 hover:text-blue-300"><a href="#home">OVERVIEW</a></p>
 
