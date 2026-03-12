@@ -26,7 +26,7 @@ export default function Header() {
             border border-white/10
             rounded-xl
 
-            z-60
+            z-80
             "
         >
             <Github />

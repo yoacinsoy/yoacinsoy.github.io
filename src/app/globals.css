@@ -268,10 +268,16 @@ section {
 
 .sidebar-link {
   @apply rotate-180
-  text-lg
+
+  text-[10px]
+  sm:text-[11px]
+  md:text-xs
+  lg:text-sm
+
   font-bold
-  tracking-widest
+  tracking-wide
   [writing-mode:vertical-rl]
+
   transition-all
   duration-300
 

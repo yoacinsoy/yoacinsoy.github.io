@@ -7,7 +7,7 @@ export default function SidebarLeft() {
             className="
             absolute top-1/2 left-2 sm:left-6
             -translate-y-1/2
-            hidden sm:flex flex-col items-center gap-4
+            hidden sm:flex flex-col items-center gap-4 z-80
             "
         >
 

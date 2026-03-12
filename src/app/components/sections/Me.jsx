@@ -8,7 +8,7 @@ export default function Me() {
             text-3xl sm:text-4xl md:text-5xl lg:text-6xl
             font-bold
             text-center
-            mb-10 md:mb-14
+            mb-10 md:mb-14 md:mt-14
             text-transparent bg-clip-text
             bg-gradient-to-r from-zinc-100 via-zinc-300 to-zinc-500
             ">
@@ -28,14 +28,14 @@ export default function Me() {
                 md:text-left
                 max-w-xl
                 mx-auto
-                md:mx-0
+                md:mx-8
                 ">
 
                     <p className="
                     text-base
                     sm:text-lg
                     md:text-xl
-                    text-gray-300
+                    text-zinc-300
                     leading-relaxed
                     ">
                         Desenvolvedor Full Stack apaixonado por criar experiências digitais impactantes.
