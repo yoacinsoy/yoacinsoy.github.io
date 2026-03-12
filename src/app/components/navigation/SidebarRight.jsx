@@ -22,13 +22,13 @@ export default function SidebarRight() {
                 <button
                     key={i}
                     onClick={() => goToSlide(i)}
-                    className={`transition-all duration-300
+                    className={`transition-all duration-300 focus:outline-none focus:ring-0 focus-visible:outline-none
                     ${currentSlide === i
                             ? 'scale-125 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]'
                             : 'text-zinc-400 hover:text-white'}
                     `}
                 >
-                    <CircleDot className={`h-5 w-5 ${currentSlide === i ? "fill-white" : ""}`} />
+                    <CircleDot className={`h-5 w-5 outline-none focus:ring-0 focus-visible:outline-none  ${currentSlide === i ? "fill-white" : ""}`} />
                 </button>
             ))}
 

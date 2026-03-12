@@ -1,6 +1,6 @@
 
-import Hero from "./About";
-import About from "./Hero";
+import Hero from "./Hero";
+import About from "./About";
 
 import Image from "next/image";
 
