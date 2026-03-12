@@ -12,18 +12,35 @@ export default function SidebarRight() {
     }
 
     return (
-        <div id="slider-controls" className="absolute top-1/2 right-6 z-20 hidden -translate-y-1/2 flex-col items-center gap-4 text-white sm:flex z-60">
-            <div className="my-2 h-6 w-px bg-white/50"></div>
+        <div
+            id="slider-controls"
+            className="
+            absolute top-1/2 right-6
+            -translate-y-1/2
+            hidden sm:flex
+            flex-col items-center gap-4
+            text-zinc-300
+            z-60
+            "
+        >
+            <div className="my-2 h-6 w-px bg-white/30"></div>
+
             {slides.map((slide, i) => (
                 <button
                     key={i}
                     onClick={() => goToSlide(i)}
-                    className={`transition-all duration-300 cubic-bezier(0.4, 0, 0.2, 1) ${currentSlide === i ? 'scale-125 text-blue-400' : 'text-white'}`}
+                    className={`
+                    transition-all duration-300
+                    ${currentSlide === i
+                            ? 'scale-125 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]'
+                            : 'text-zinc-400 hover:text-white'}
+                    `}
                 >
-                    <CircleDot className="h-5 w-5" />
+                    <CircleDot className={`h-5 w-5 ${currentSlide === i ? "fill-white" : ""}`} />
                 </button>
             ))}
-            <div className="my-2 h-6 w-px bg-white/50"></div>
+
+            <div className="my-2 h-6 w-px bg-white/30"></div>
         </div>
     )
 }

@@ -203,13 +203,13 @@ section {
     inset 0 0 6px rgba(255, 200, 0, 0.3);
 }
 
-.neon-dark {
-  border: 2px solid rgba(0, 180, 255, 0.9);
+.silver-glow {
+  border: 2px solid rgba(240, 240, 240, 0.8);
   box-shadow:
-    0 0 4px rgba(0, 180, 255, 0.9),
-    0 0 10px rgba(0, 180, 255, 0.6),
-    0 0 20px rgba(0, 180, 255, 0.4),
-    inset 0 0 6px rgba(0, 180, 255, 0.3);
+    0 0 6px rgba(255, 255, 255, 0.7),
+    0 0 12px rgba(220, 220, 220, 0.5),
+    0 0 24px rgba(180, 180, 180, 0.35),
+    inset 0 0 8px rgba(255, 255, 255, 0.3);
 }
 
 .dark {
@@ -253,4 +253,46 @@ section {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.tech-chip {
+  @apply px-4 py-1.5 rounded-full text-xs sm:text-sm text-white
+  bg-white/50 border border-white/20 backdrop-blur-sm
+  transition-all duration-300;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.35);
+}
+
+.tech-chip:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-link {
+  @apply rotate-180
+  text-lg
+  font-bold
+  tracking-widest
+  [writing-mode:vertical-rl]
+  transition-all
+  duration-300
+
+  text-zinc-600
+  dark:text-zinc-300
+
+  drop-shadow-[0_0_4px_rgba(0,0,0,0.2)]
+  dark:drop-shadow-[0_0_6px_rgba(255,255,255,0.35)]
+
+  hover:text-black
+  dark:hover:text-white
+
+  hover:drop-shadow-[0_0_6px_rgba(0,0,0,0.3)]
+  dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.6)];
+}
+
+.sidebar-link::after {
+  content: "";
+  @apply absolute w-px h-full left-1/2 opacity-0 transition;
+}
+
+.sidebar-link:hover::after {
+  @apply opacity-100;
 }
