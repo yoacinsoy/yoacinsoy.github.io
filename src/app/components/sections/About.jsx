@@ -1,4 +1,6 @@
 import Image from "next/image"
+import TechStack from "@/app/components/ui/TechStack"
+
 export default function About() {
     return (
         <section className="relative z-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16" id="architecture">
@@ -10,21 +12,15 @@ export default function About() {
                     <p className="text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-300 leading-relaxed">
                         Full Stack Developer passionate about creating impactful digital
                         experiences. Specialist in modern technologies such as React,
-                        Next.js, Node.js, and TypeScript. Always seeking new challenges and
+                        Next.js, Vue, and Laravel. Always seeking new challenges and
                         opportunities to grow professionally.
                     </p>
 
                     <div className="mt-8 space-y-4">
-                        <div className="flex flex-wrap justify-center md:justify-start gap-3 text-sm">
-                            <span className="tech-chip">React</span>
-                            <span className="tech-chip">Node.js</span>
-                            <span className="tech-chip">Vue.js</span>
-                            <span className="tech-chip">Next.js</span>
-                            <span className="tech-chip">Laravel</span>
-                        </div>
+                        <TechStack />
 
                         <p className="text-sm sm:text-base text-zinc-500 dark:text-zinc-400">
-                            Transformando ideias em soluções reais através da tecnologia.
+                            Linux and open source enthusiast, always eager to contribute and learn from the community.
                         </p>
                     </div>
                 </div>
