@@ -13,7 +13,7 @@ export default function GithubSignIn() {
             >
                 <GithubIcon size={20} />
                 <span>
-                    Veja meu Github
+                    View on GitHub
                 </span>
             </Link>
         </div>

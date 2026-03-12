@@ -14,14 +14,7 @@ export default function SidebarRight() {
     return (
         <div
             id="slider-controls"
-            className="
-            absolute top-1/2 right-6
-            -translate-y-1/2
-            hidden sm:flex
-            flex-col items-center gap-4
-            text-zinc-300
-            z-60
-            "
+            className="absolute top-1/2 right-6 -translate-y-1/2 hidden sm:flex flex-col items-center gap-4 text-zinc-300 z-60"
         >
             <div className="my-2 h-6 w-px bg-white/30"></div>
 
@@ -29,8 +22,7 @@ export default function SidebarRight() {
                 <button
                     key={i}
                     onClick={() => goToSlide(i)}
-                    className={`
-                    transition-all duration-300
+                    className={`transition-all duration-300
                     ${currentSlide === i
                             ? 'scale-125 text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.6)]'
                             : 'text-zinc-400 hover:text-white'}

@@ -12,7 +12,7 @@ export default function Resume() {
             className="
             flex items-center gap-2 sm:gap-3
             px-3 sm:px-5
-            py-2 sm:py-3
+            py-6 sm:py-6
             text-sm sm:text-base
             bg-white text-black border-black
             hover:bg-black hover:text-white
@@ -26,7 +26,7 @@ export default function Resume() {
                 <LucideFileText size={18} className="sm:w-5 sm:h-5" />
 
                 <span className="font-medium tracking-wide">
-                    Ver currículo
+                    Resume
                 </span>
             </Link>
         </Button>

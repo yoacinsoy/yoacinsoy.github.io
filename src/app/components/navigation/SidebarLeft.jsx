@@ -16,7 +16,7 @@ export default function SidebarLeft() {
             </p>
 
             <p className="sidebar-link">
-                <a href="#projects">.work()</a>
+                <a href="#projects">.projects()</a>
             </p>
 
             <p className="sidebar-link">
@@ -30,7 +30,7 @@ export default function SidebarLeft() {
             </p>
 
             <p className="sidebar-link">
-                <a href="#lab">.projects()</a>
+                <a href="#lab">.works()</a>
             </p>
 
             <p className="sidebar-link">
