@@ -89,17 +89,14 @@ export default function Projects() {
                             transition={{ delay: i * 0.1, duration: 0.5 }}
                             className="group relativ rounded-2xl overflow-hidden border border-white/15 dark:border-white/10 bg-white/[0.03] dark:bg-white/[0.02] backdrop-blur-2xl shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] hover:bg-white/[0.06] dark:hover:bg-white/[0.04] transition-all duration-500"
                         >
-
-                            {/* IMAGE */}
-                            <div className="relative h-48 overflow-hidden">
-
+                            <div className="relative h-24 overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
 
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transpare" />
 
                                 {/* HOVER BUTTON */}
 
@@ -112,12 +109,12 @@ export default function Projects() {
                             </div>
 
                             {/* CARDS */}
-                            <div className="p-5">
-                                <h3 className="text-lg font-semibold mb-2 text-zinc-900 dark:text-white group-hover:text-blue-500 transition-colors duration-300">
+                            <div className="p-5 h-52 flex flex-col justify-between">
+                                <h3 className="text-lg font-semibold text-zinc-900 dark:text-white group-hover:text-blue-500 transition-colors duration-300">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-sm leading-relaxed mb-4 text-zinc-600 dark:text-zinc-400">
+                                <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
                                     {project.desc}
                                 </p>
 

@@ -1,10 +1,9 @@
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
-
 export default function SidebarLeft() {
     return (
         <div
             id="social-icons"
-            className="absolute top-1/2 left-2 sm:left-6 -translate-y-1/2 hidden sm:flex flex-col items-center gap-4 z-80"
+            className="absolute top-1/2 left-2 sm:left-6 -translate-y-1/2 hidden sm:flex flex-col items-center gap-4 z-80 text-2xl"
+
         >
 
             <p className="sidebar-link">
